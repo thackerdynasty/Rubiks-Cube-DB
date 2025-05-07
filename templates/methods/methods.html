@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Methods
+{% endblock %}
+
+{% block header %}
+    <h1 class="text-center display-3">Methods</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <p>Explore different methods to solve the Rubik's Cube!</p>
+        <a href="{{ url_for('cfop') }}" class="btn btn-primary">CFOP Method</a>
+{#        <a href="{{ url_for('roux') }}" class="btn btn-primary">Roux Method</a>#}
+{#        <a href="{{ url_for('petrus') }}" class="btn btn-primary">Petrus Method</a>#}
+    </div>
+{% endblock %}

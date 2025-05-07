@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}CFOP Method{% endblock %}
+{% block header %}
+    <h1 class="text-center display-3">CFOP Method</h1>
+{% endblock %}
+{% block content %}
+    <h2>CFOP Method Overview</h2>
+    <p>The CFOP method is a popular method for solving the Rubik's Cube. It consists of four main steps:</p>
+    <ol>
+        <li>Cross: Solve the cross on one face of the cube.</li>
+        <li>F2L (First 2 Layers): Solve the first two layers of the cube simultaneously.</li>
+        <li>OLL (Orientation of the Last Layer): Orient the last layer so that all pieces are facing the same direction.</li>
+        <li>PLL (Permutation of the Last Layer): Permute the last layer pieces to their correct positions.</li>
+    </ol>
+
+    <h2>Step 1: Cross</h2>
+    <p>The first step is to create a cross on one face of the cube. This involves positioning the edge pieces so that they match both the center piece of the face and the center pieces of adjacent faces.</p>
+
+    <h2>Step 2: F2L (First 2 Layers)</h2>
+    <p>The second step is to solve the first two layers simultaneously. This involves pairing up corner and edge pieces and inserting them into their correct positions.</p>
+
+    <h2>Step 3: OLL (Orientation of the Last Layer)</h2>
+    <p>The third step is to orient all pieces of the last layer so that they are facing upwards. This can be done using a set of <a href="{{ url_for('cfop_oll_algs') }}">algorithms</a>.</p>
+
+    <h2>Step 4: PLL (Permutation of the Last Layer)</h2>
+    <p>The final step is to permute the last layer pieces to their correct positions. This can also be done using a set of <a href="{{ url_for('cfop_pll_algs') }}">algorithms</a>.</p>
+    <a href="{{ url_for('methods') }}" class="btn btn-primary">Back to Methods</a>
+{% endblock %}

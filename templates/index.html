@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block header %}
+    <h1 class="text-center display-3">Welcome to Rubik's Cube DB</h1>
+{% endblock %}
+{% block content %}
+    <div class="text-center">
+        <p>This is your one-stop shop for all things cubing!</p>
+        <a href="{{ url_for('solver') }}" class="btn btn-primary">Solve a Cube</a>
+    </div>
+{% endblock %}

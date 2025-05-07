@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Solver{% endblock %}
+{% block header %}
+<h1>Solver</h1>
+{% endblock %}
+{% block content %}
+<p>This is a simple web application that allows you to solve a Rubik's Cube using the Kociemba algorithm.</p>
+<p>To get started, please enter the cube configuration in the input field below:</p>
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="cube_input" class="form-label">Cube Configuration</label>
+        <input type="text" class="form-control" name="cube_input" placeholder="Enter cube configuration">
+    </div>
+    <button type="submit" class="btn btn-primary">Solve</button>
+</form>
+{% endblock %}
